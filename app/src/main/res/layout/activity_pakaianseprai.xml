@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PakaianSepraiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laundry Pakaian + Seprai"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f8eff8f3"
+        android:layout_gravity="center"
+        android:text="Pakaian = Rp 10.500 "
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#f8eff8f3"
+            android:gravity="center"
+            android:text="Berat(kg) : "
+            android:padding="16dp"
+            android:layout_margin="30dp"/>
+
+        <EditText
+            android:id="@+id/beratkg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#f8eff8f3"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="erat"
+            android:padding="16dp"
+            android:layout_margin="30dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f8eff8f3"
+        android:layout_gravity="center"
+        android:text="Seprai/kg = Rp 13.000 "
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#f8eff8f3"
+            android:gravity="center"
+            android:text="Berat(kg) : "
+            android:padding="16dp"
+            android:layout_margin="30dp"/>
+
+        <EditText
+            android:id="@+id/Berat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#f8eff8f3"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="Berat"
+            android:padding="16dp"
+            android:layout_margin="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:text="Total harga : "/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:text=""/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="Hitung" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kembali" />
+
+</LinearLayout>
